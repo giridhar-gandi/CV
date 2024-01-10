@@ -1,0 +1,12 @@
+.course-columns {
+    display: flex;
+    justify-content: space-between;
+}
+.course-columns ul {
+    list-style-type: none;
+    padding: 0;
+}
+.course-columns li {
+    margin-bottom: 10px; /* Adjust as needed */
+    font-size: small; /* Adjust as needed */
+}
