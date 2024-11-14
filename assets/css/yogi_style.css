@@ -10,3 +10,18 @@
     margin-bottom: 10px; /* Adjust as needed */
     font-size: small; /* Adjust as needed */
 }
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-container .image {
+    flex: 1;
+    margin: 0 5px;
+}
+
+.image-container .image img {
+    width: 100%;
+    height: auto;
+}
