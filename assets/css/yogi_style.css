@@ -50,12 +50,18 @@
     height: auto;
 }
 
-.image img {
-    width: 40%;
-    height: 700px; /* Set the desired height */
-    object-fit: cover; /* Maintain aspect ratio and cover the given height */
+.image {
+    display: block;
+    width: 100%; /* Ensures the anchor takes the full width of its container */
+    max-width: 100%; /* Ensures the anchor does not exceed the container width */
 }
 
+.image img {
+    display: block;
+    width: 100%; /* Ensures the image takes the full width of its container */
+    height: auto; /* Maintains the aspect ratio of the image */
+    object-fit: cover; /* Ensures the image covers the dimensions without distortion */
+}
 .course-list li {
     margin-bottom: 10px; /* Adjust the spacing as needed */
 }
@@ -65,7 +71,7 @@
     height: 130px; /* Adjust the height as needed */
     object-fit: cover; /* Ensures the image covers the dimensions without distortion */
     border: 1px solid #000; /* Optional: Adds a border to the image */
-    border-radius: 5px; /* Optional: Adds rounded corners */
+    border-radius: 15px; /* Optional: Adds rounded corners */
 }
 
 body {
@@ -85,6 +91,6 @@ body {
 }
 
 .image-item img {
-    max-width: 100%;
+    max-width: 30%;
     height: auto;
 }
