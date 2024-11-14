@@ -51,11 +51,40 @@
 }
 
 .image img {
-    width: 70%;
+    width: 40%;
     height: 700px; /* Set the desired height */
     object-fit: cover; /* Maintain aspect ratio and cover the given height */
 }
 
 .course-list li {
     margin-bottom: 10px; /* Adjust the spacing as needed */
+}
+
+.passport-photo {
+    width: 100px; /* Adjust the width as needed */
+    height: 130px; /* Adjust the height as needed */
+    object-fit: cover; /* Ensures the image covers the dimensions without distortion */
+    border: 1px solid #000; /* Optional: Adds a border to the image */
+    border-radius: 5px; /* Optional: Adds rounded corners */
+}
+
+body {
+    background-color: #ADD8E6; /* Light blue color */
+}
+
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image-item {
+    flex: 1 1 48%;
+    text-align: center;
+    margin: 1%;
+}
+
+.image-item img {
+    max-width: 100%;
+    height: auto;
 }
